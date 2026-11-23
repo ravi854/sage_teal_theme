@@ -1,6 +1,6 @@
 ### Sage Teal Theme
 
-Global Sage-Teal brand theme for Frappe & ERPNext
+Global Sage-Teal theme with Pane View(Split Screen view)for Frappe & ERPNext
 
 ### Installation
 
