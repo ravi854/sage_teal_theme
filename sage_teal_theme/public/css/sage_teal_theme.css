@@ -1,0 +1,371 @@
+:root,
+[data-theme="light"] {
+  --primary: #0f766e;
+  --primary-color: #0f766e;
+  --btn-primary: #0f766e;
+  --btn-primary-hover: #0d5c56;
+  --text-on-primary: #ffffff;
+
+  /* Eye-Cool Soft Sage-Slate Surfaces */
+  --bg-color: #eef3f2;
+  --subtle-fg: #e4ecea;
+  --subtle-accent: #d8e5e2;
+  --fg-color: #f8fbfa;
+  --card-bg: #f8fbfa;
+  --navbar-bg: #f4f8f7;
+  --sidebar-bg: #e5edeb;
+  --control-bg: #eef4f3;
+  --control-bg-on-gray: #e2ecea;
+  --border-color: #d2dfdc;
+  --dark-border-color: #bccdc9;
+  --focus-default: 0 0 0 2px rgba(15, 118, 110, 0.22);
+}
+
+/* Main Desk Canvas & Page Wrapper */
+body,
+.main-section,
+.page-container,
+.layout-main,
+.layout-main-section-wrapper {
+  background-color: #eef3f2 !important;
+}
+
+/* Left Sidebar & Module Rail */
+.layout-side-section,
+.desk-sidebar,
+.standard-sidebar,
+.body-sidebar-container,
+.body-sidebar,
+.app-sidebar {
+  background-color: #e5edeb !important;
+  border-right: 1px solid #d2dfdc !important;
+}
+
+/* Elevated Cards, Form Sections & List Rows (Soft Off-White instead of Stark White) */
+.frappe-card,
+.widget,
+.form-section,
+.form-dashboard,
+.list-row-container,
+.page-head,
+.std-form-layout > .form-layout > .form-page {
+  background-color: #f8fbfa !important;
+  border-color: #d2dfdc !important;
+}
+
+.page-head {
+  border-bottom: 1px solid #d2dfdc !important;
+}
+
+/* Top Navbar */
+header.navbar {
+  background-color: #f4f8f7 !important;
+  border-bottom: 2px solid #0f766e !important;
+}
+
+/* Primary Buttons across Desk, Login, Forms & Portal */
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:active,
+.page-actions .btn-primary,
+.form-message.blue {
+  background-color: #0f766e !important;
+  border-color: #0f766e !important;
+  color: #ffffff !important;
+}
+
+.btn-primary:hover {
+  background-color: #0d5c56 !important;
+  border-color: #0d5c56 !important;
+}
+
+/* Sidebar Active & Hover States */
+.desk-sidebar .standard-sidebar-item:hover,
+.standard-sidebar .standard-sidebar-item:hover {
+  background-color: #d8e5e2 !important;
+}
+
+.desk-sidebar .standard-sidebar-item.selected,
+.standard-sidebar .standard-sidebar-item.selected {
+  background-color: #cde0dc !important;
+  color: #0b4f4a !important;
+  font-weight: 600;
+}
+
+.desk-sidebar .standard-sidebar-item.selected svg,
+.desk-sidebar .standard-sidebar-item.selected .sidebar-item-icon {
+  stroke: #0f766e !important;
+  color: #0f766e !important;
+}
+
+/* Links & Form Inputs */
+a:not(.btn):not(.navbar-brand):not(.nav-link):not(.dropdown-item) {
+  color: #0f766e;
+}
+
+.form-control,
+input.form-control,
+select.form-control,
+textarea.form-control {
+  background-color: #eef4f3 !important;
+  border-color: #c8d7d4 !important;
+}
+
+.form-control:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  background-color: #ffffff !important;
+  border-color: #0f766e !important;
+  box-shadow: 0 0 0 2px rgba(15, 118, 110, 0.18) !important;
+}
+
+/* Checkboxes & Toggles */
+input[type="checkbox"]:checked {
+  background-color: #0f766e !important;
+  border-color: #0f766e !important;
+}
+
+/* Detail Forms (Sales Order, Invoice, Quotation, Customer, Item) */
+.form-layout,
+.form-page,
+.form-tabs-list,
+.form-tabs,
+.form-dashboard-section,
+.form-links,
+.form-heatmap,
+.form-assignments,
+.form-attachments,
+.form-shared,
+.form-tags,
+.form-sidebar,
+.comment-box,
+.timeline-item .timeline-content {
+  background-color: #f3f7f6 !important;
+  border-color: #d2dfdc !important;
+}
+
+.form-tabs-list {
+  background-color: #e7efed !important;
+  border-bottom: 1px solid #cddbd8 !important;
+}
+
+.form-tabs .nav-link.active {
+  background-color: #f3f7f6 !important;
+  color: #0f766e !important;
+  border-bottom: 2px solid #0f766e !important;
+  font-weight: 600;
+}
+
+/* Child Tables (Items, Taxes & Charges, Payment Schedule) */
+.frappe-control .form-grid,
+.grid-heading-row,
+.grid-body,
+.grid-row,
+.grid-footer,
+.data-row {
+  background-color: #f3f7f6 !important;
+  border-color: #d2dfdc !important;
+}
+
+.grid-heading-row {
+  background-color: #e4ecea !important;
+  color: #132a2e !important;
+}
+
+.grid-row:hover .data-row,
+.list-row:hover {
+  background-color: #e8f0ee !important;
+}
+
+/* List View & Report Tables */
+.frappe-list,
+.list-row,
+.list-row-head,
+.datatable .dt-cell,
+.datatable .dt-header .dt-cell {
+  background-color: #f3f7f6 !important;
+  border-color: #d2dfdc !important;
+}
+
+.list-row-head,
+.datatable .dt-header .dt-cell {
+  background-color: #e4ecea !important;
+}
+
+/* Modals, Popovers & Awesomebar Search */
+.modal-content,
+.modal-header,
+.modal-body,
+.modal-footer,
+.awesomplete > ul {
+  background-color: #f3f7f6 !important;
+  border-color: #c8d7d4 !important;
+}
+
+/* Frappe v16 Surface Custom Properties & Utility Overrides */
+:root,
+[data-theme="light"],
+body {
+  --surface-white: #f2f6f5 !important;
+  --surface-gray-1: #e9f0ee !important;
+  --surface-gray-2: #e0eae7 !important;
+  --surface-gray-3: #d5e2df !important;
+  --bg-surface: #f2f6f5 !important;
+  --fg-color: #f2f6f5 !important;
+  --subtle-fg: #e7efed !important;
+  --bg-color: #e8efed !important;
+  --card-bg: #f2f6f5 !important;
+  --sidebar-bg: #e1eae8 !important;
+}
+
+/* Override Frappe v16 Tailwind bg-white / bg-gray-50 inside Desk (/app) */
+body[data-route] .bg-white,
+.layout-main .bg-white,
+.page-body .bg-white,
+.form-layout .bg-white,
+.std-form-layout .bg-white,
+.form-section,
+.form-column,
+.section-body,
+.form-dashboard,
+.form-tabs-list,
+.page-card,
+.layout-main-section {
+  background-color: #f2f6f5 !important;
+}
+
+body[data-route] .bg-gray-50,
+.layout-main .bg-gray-50,
+.page-body .bg-gray-50 {
+  background-color: #e7efed !important;
+}
+
+/* Read-only / Disabled Field Boxes inside Forms */
+.like-disabled-input,
+.control-value.like-disabled-input {
+  background-color: #e6eeec !important;
+  border-color: #cddbd8 !important;
+  color: #132a2e !important;
+}
+
+/* Split-Screen List + Form Pane View */
+body.stt-split-active .page-container:not([style*="display: none"]) .layout-main {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: stretch !important;
+  gap: 12px;
+  height: calc(100vh - 115px) !important;
+  overflow: hidden !important;
+}
+
+body.stt-split-active .page-container:not([style*="display: none"]) .layout-side-section {
+  display: none !important;
+}
+
+body.stt-split-active .page-container:not([style*="display: none"]) .layout-main-section-wrapper {
+  flex: 0 0 40% !important;
+  max-width: 40% !important;
+  height: 100% !important;
+  overflow-y: auto !important;
+  margin: 0 !important;
+}
+
+.stt-split-right-pane {
+  flex: 1 1 60% !important;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #f2f6f5;
+  border: 1px solid #c8d7d4;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(19, 42, 46, 0.06);
+}
+
+.stt-split-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 14px;
+  background-color: #e4ecea;
+  border-bottom: 1px solid #c8d7d4;
+  color: #132a2e;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+#stt-split-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #f2f6f5;
+}
+
+.stt-split-selected-row,
+.stt-split-selected-row .list-row {
+  background-color: #d4e6e2 !important;
+  border-left: 3px solid #0f766e !important;
+}
+
+@media (max-width: 991px) {
+  body.stt-split-active .page-container:not([style*="display: none"]) .layout-main {
+    flex-direction: column !important;
+    height: auto !important;
+  }
+  body.stt-split-active .page-container:not([style*="display: none"]) .layout-main-section-wrapper,
+  .stt-split-right-pane {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+    min-height: 500px;
+  }
+}
+
+/* Draggable Split-Pane Divider */
+body.stt-split-active .page-container:not([style*="display: none"]) .layout-main {
+  gap: 0 !important;
+}
+
+.stt-split-resizer {
+  flex: 0 0 10px;
+  width: 10px;
+  height: 100%;
+  cursor: col-resize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  user-select: none;
+  z-index: 20;
+  transition: background-color 0.15s ease;
+}
+
+.stt-split-resizer:hover,
+.stt-split-resizer.stt-dragging {
+  background-color: rgba(15, 118, 110, 0.14);
+}
+
+.stt-split-grip {
+  width: 3px;
+  height: 38px;
+  border-radius: 3px;
+  background-color: #9fb5b0;
+  transition: background-color 0.15s ease, height 0.15s ease;
+}
+
+.stt-split-resizer:hover .stt-split-grip,
+.stt-split-resizer.stt-dragging .stt-split-grip {
+  background-color: #0f766e;
+  height: 54px;
+}
+
+.stt-split-right-pane {
+  flex: 1 1 auto !important;
+  min-width: 280px;
+}
+
+@media (max-width: 991px) {
+  .stt-split-resizer {
+    display: none !important;
+  }
+}
