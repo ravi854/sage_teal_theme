@@ -1,0 +1,33 @@
+
+/* Compact 3-in-a-row Parcel Dimensions on Item form */
+[data-doctype="Item"] [data-fieldname="length_cm"],
+[data-doctype="Item"] [data-fieldname="width_cm"],
+[data-doctype="Item"] [data-fieldname="height_cm"] {
+  display: inline-block !important;
+  width: 32% !important;
+  margin-right: 1.3% !important;
+  vertical-align: top;
+}
+
+/* Compact 3-in-a-row Parcel Dimensions on Item form */
+[data-doctype="Item"] [data-fieldname="length_cm"],
+[data-doctype="Item"] [data-fieldname="width_cm"],
+[data-doctype="Item"] [data-fieldname="height_cm"] {
+  display: inline-block !important;
+  width: 32% !important;
+  margin-right: 1.3% !important;
+  vertical-align: top;
+}
+
+/* Render Item Length, Width, Height side-by-side on one compact row */
+[data-page-route="Form/Item"] .frappe-control[data-fieldname="length_cm"],
+[data-page-route="Form/Item"] .frappe-control[data-fieldname="width_cm"],
+[data-page-route="Form/Item"] .frappe-control[data-fieldname="height_cm"] {
+  display: inline-block !important;
+  width: 32% !important;
+  margin-right: 1.3% !important;
+  vertical-align: top;
+}
+[data-page-route="Form/Item"] .frappe-control[data-fieldname="height_cm"] {
+  margin-right: 0 !important;
+}

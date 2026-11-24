@@ -369,3 +369,50 @@ body.stt-split-active .page-container:not([style*="display: none"]) .layout-main
     display: none !important;
   }
 }
+
+/* Mobile Viewport Fix: remove left vertical accent border & stack panes cleanly */
+@media (max-width: 767px) {
+  body,
+  .main-section,
+  .page-container,
+  .layout-main,
+  .layout-main-section-wrapper,
+  .layout-main-section,
+  .form-layout,
+  .page-head {
+    border-left: none !important;
+    box-shadow: none !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  .stt-split-resizer,
+  #stt-split-toggle-btn {
+    display: none !important;
+  }
+
+  body.stt-split-active .layout-main {
+    flex-direction: column !important;
+  }
+
+  .stt-split-right-pane {
+    min-width: 100% !important;
+    width: 100% !important;
+    border-left: none !important;
+    border-top: 2px solid #0f766e !important;
+  }
+}
+
+/* Collapse Frappe v16 Desk Sidebar on Mobile Screens */
+@media (max-width: 768px) {
+  .body-sidebar-container:not(.expanded) {
+    display: none !important;
+    width: 0 !important;
+    border: none !important;
+  }
+  .body-sidebar-placeholder {
+    display: none !important;
+    width: 0 !important;
+  }
+}

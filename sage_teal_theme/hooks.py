@@ -280,7 +280,7 @@ app_license = "mit"
 # ignore_translatable_strings_from = []
 
 
-app_include_css = ["/assets/sage_teal_theme/css/sage_teal_theme.css?v=6"]
-web_include_css = ["/assets/sage_teal_theme/css/sage_teal_theme.css?v=6"]
+app_include_css = ["/assets/sage_teal_theme/css/sage_teal_theme.css?v=8"]
+web_include_css = ["/assets/sage_teal_theme/css/sage_teal_theme.css?v=8"]
 
 app_include_js = ["/assets/sage_teal_theme/js/split_pane.js?v=2"]
